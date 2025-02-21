@@ -1,0 +1,150 @@
+/* https://hankchizljaw.com/wrote/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+    max-width: 1440px;
+    height: 960px;
+    background-color: #D5E1EF;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    justify-content: center;
+    display: flex;
+    width: 320px;
+    height: 499px;
+    margin-top: 230.5px;
+    margin-bottom: 230.5px;
+    background-color: white;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.content__qr-image{
+    width: 288px;
+    height: 288px;
+    display: flex;
+    margin: 16px 16px 24px 16px;
+    background-color: #2C7DFA;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.qr{
+    width: 160px;
+    height: 160px;
+}
+.content__text{
+    width: 288px;
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 16px 40px 16px;
+}
+.content__text-first{
+    font-family: 'Outfit';
+    color: #1F314F;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    font-weight: 700;
+    margin: 0px 16px 16px 16px;
+}
+.content__text-second{
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    margin: 0px 16px 0px 16px;
+    font-family: 'Outfit';
+    color: #68778D;
+    font-weight: 400; 
+}
+
+
+@media (max-width: 375px) {
+body{
+    max-width: 375px;
+    width: 812px;
+    background-color: #D5E1EF;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    justify-content: center;
+    display: flex;
+    width: 320px;
+    height: 499px;
+    margin-top: 156.5px;
+    margin-bottom: 156.5px;
+    background-color: white;
+    border-radius: 20px;
+    flex-direction: column;
+}
+}
